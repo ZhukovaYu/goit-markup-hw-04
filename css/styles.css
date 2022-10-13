@@ -114,10 +114,15 @@ header {
 
 .head-nav,
 .main-nav-list,
-.contacts-list,
-.header-container {
+.header-container,
+.contacts-header-link {
     display: flex;
     align-items: center;
+}
+
+.contacts-list{
+    display: flex;
+    justify-content: flex-end;
 }
 
 header {
@@ -132,9 +137,38 @@ header {
     color: var(--accent-color);
 }
 
+.header-icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-icon-mail:hover,
+.header-icon-phone:hover,
+.header-icon-mail:focus,
+.header-icon-phone:focus{
+    color: var(--accent-color);
+}
+
+
+
 /* hero */
 .hero-section {
     background-color: var(--background-dark-color);
+    background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4), 
+                rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-background.jpg");
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -146,7 +180,6 @@ header {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
     width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -176,6 +209,7 @@ header {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),  
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--primary-white-color);
 }
 
 /*sections*/
@@ -187,7 +221,8 @@ header {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.section-features{
+.section-features,
+.section-clients {
     padding-top:94px;
     padding-bottom: 94px;
 }
@@ -207,6 +242,19 @@ header {
 
 .features-list{
     display: flex;
+}
+
+.icon-antena,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut{
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--background-even-section);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .features-list-item {
@@ -272,6 +320,7 @@ padding-bottom: 94px;
 }
 
 .worker-job{
+    margin-bottom: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -279,6 +328,72 @@ padding-bottom: 94px;
 }
 .team-card-text {
     padding:30px;
+}
+
+.icon-social-media {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card-social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item{
+    fill: var(--secondary-text-color);
+}
+
+.icon-social-media:hover,
+.icon-social-media:focus {
+    background: var(--accent-color);
+}
+
+.icon-item:hover,
+.icon-item:focus {
+    fill: white;
+}
+
+
+/*Clients*/
+
+.clients-list{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.client-logo-box {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-logo-item{
+    width: 106px;
+    height: 60px;
+    background-size:contain;
+    fill: #AFB1B8;
+}
+
+.client-logo-box:hover,
+.client-logo-box:focus {
+    border-color: var(--accent-color);
+}
+
+.client-logo-item:hover,
+.client-logo-item:focus{
+    fill:var(--accent-color)
 }
 
 /* Portfolio*/
@@ -381,4 +496,43 @@ footer {
 
 .address-list-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.action-phrase{
+    color:var(--primary-white-color);
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-container{
+    display:flex;
+    gap:70px;
+}
+
+.footer-social-media{
+    display:flex;
+    gap: 10px;
+}
+.footer-social-media-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.icon-item-footer {
+   fill: white;
+}
+.footer-social-media-item:hover,
+.footer-social-media-item:focus {
+    background: #2196F3;
 }

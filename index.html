@@ -26,9 +26,19 @@
             </ul>
         </nav>
         <ul class="list contacts-list">
-            <li class="contacts-header-item"> <a href="mailto:example@gmail.com" class="contacts-header-link">
-                    info@devstudio.com </a> </li>
-            <li class="contacts-header-item"> <a href="tel:+380961111111" class="contacts-header-link"> +38 096 111 11 11 </a>
+            <li class="contacts-header-item"> 
+                <a href="mailto:example@gmail.com" class="contacts-header-link">
+                <svg class="header-icon-mail">
+                    <use href="./images/sprite.svg#icon-envelope" class="symbol"></use>
+                </svg>  
+                  info@devstudio.com </a> 
+            </li>        
+            <li class="contacts-header-item"> 
+                <a href="tel:+380961111111" class="contacts-header-link">
+                <svg class="header-icon-phone">
+                    <use href="./images/sprite.svg#icon-smartphone" class="symbol"></use>
+                </svg>
+                    +38 096 111 11 11 </a>
             </li>
         </ul>
     </div>
@@ -47,18 +57,38 @@
         <h2 class ="section-title visually-hidden">Характеристики команди</h2>
             <ul class = "features-list list">
                 <li class="features-list-item">
+                    <div class="icon-astronaut" >
+                    <svg heigth="70px" width="70">
+                        <use href="./images/sprite.svg#icon-antenna"></use>
+                    </svg>
+                    </div>
                     <h3 class = "feature-title">Увага до деталей</h3>
                     <p class = "feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
                 <li class="features-list-item">
+                    <div class="icon-clock">
+                        <svg heigth="70px" width="70">
+                            <use href="./images/sprite.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                     <h3 class = "feature-title" >Пунктуальність</h3>
                     <p class="feature-text" >Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
                 <li class="features-list-item">
+                    <div class="icon-diagram">
+                        <svg heigth="70px" width="70">
+                            <use href="./images/sprite.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
                     <h3 class = "feature-title">Планування</h3>
                     <p class="feature-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
                 <li class="features-list-item">
+                    <div class="icon-astronaut">
+                        <svg heigth="70px" width="70">
+                        <use href="./images/sprite.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
                     <h3 class = "feature-title">Сучасні технології</h3>
                     <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
@@ -96,6 +126,30 @@
                     <div class="team-card-text">
                         <h3 class = "worker-name">Ігор Дем'яненко </h3>
                        <p class ="worker-job" lang="en">Product Designer</p>
+                    <ul>
+                        <li class="team-card-social-media">
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
                     </div>
                 </li>
                 <li class="team-card">
@@ -104,7 +158,31 @@
                     <div class="team-card-text">
                         <h3 class = "worker-name">Ольга Рєпіна </h3>
                         <p class ="worker-job" lang="uk">Frontend Developer</p>
-                    </div>
+                    <ul>
+                        <li class="team-card-social-media">
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 </li>
                 <li class="team-card">
                     <img src="./images/team3.jpeg" class="photo-persona"
@@ -112,7 +190,31 @@
                     <div class="team-card-text">
                         <h3 class = "worker-name"> Микола Тарасов </h3>
                         <p  class ="worker-job" lang="uk"> Marketing </p>
-                    </div>
+                    <ul>
+                        <li class="team-card-social-media">
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </div>
+                            <div class="icon-social-media">
+                                <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 </li>
                 <li class="team-card">
                     <img src="./images/team4.jpeg" class="photo-persona"
@@ -120,17 +222,92 @@
                     <div class="team-card-text">
                         <h3 class = "worker-name"> Михайло Єрмаков </h3>
                     <p class ="worker-job" lang="uk"> UI Designer </p>
-                </div>
+                <ul>
+                    <li class="team-card-social-media">
+                        <div class="icon-social-media">
+                            <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </div>
+                        <div class="icon-social-media">
+                            <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </div>
+                        <div class="icon-social-media">
+                            <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </div>
+                        <div class="icon-social-media">
+                            <svg width="20px" heigth="20px" class="icon-item">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
                 </li>
             </ul>
         </div>
         </section>
-    
+
+        <section class="section section-clients">
+        <div class="container">
+        <h2 class="section-title"> Постійні клієнти </h2>
+        <ul class="clients-list list">
+            <li class="clients-list-item"> 
+                <div class="client-logo-box">
+                 <svg class="client-logo-item">
+                 <use href="./images/sprite.svg#icon-logo-1"></use>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <div class="client-logo-box">
+                <svg class="client-logo-item">
+                <use href="./images/sprite.svg#icon-logo-2"></use>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <div class="client-logo-box">
+                <svg class="client-logo-item">                    
+                <use href="./images/sprite.svg#icon-logo-3"></use>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <div class="client-logo-box">
+                <svg class="client-logo-item">
+                <use href="./images/sprite.svg#icon-logo-4"></use>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <div class="client-logo-box">
+                <svg class="client-logo-item">  
+                <use href="./images/sprite.svg#icon-logo-5"></use>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <div class="client-logo-box">
+                <svg class="client-logo-item">
+                <use href="./images/sprite.svg#icon-logo-6"></use>                    
+                </svg>
+                </div>
+            </li>
+        </ul>
+        </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container">
-        <a href="./index.html" class="logo-text-footer"> <span class="logo-part">Web</span>Studio</a>
+        <div class="container footer-container">
+        <div>
+        <a href="./index.html" class="logo-text-footer"> 
+        <span class="logo-part">Web</span>Studio</a>
         <address>
             <p class ="address-footer"> м. Київ, пр-т Лесі Українки, 26 </p>
             <ul class="list">
@@ -138,6 +315,32 @@
                 <li class="address-list-item"> <a href="tel:+380961111111" class="contacts-footer"> +38 096 111 11 11 </a> </li>
             </ul>
         </address>
+        </div>
+        <div>
+            <p class="action-phrase"> приєднуйтесь </p>
+            <ul class="footer-social-media list">
+                <li class="footer-social-media-item">
+                        <svg width="20px" heigth="20px" class="icon-item-footer">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                </li>
+                <li class="footer-social-media-item">
+                        <svg width="20px" heigth="20px" class="icon-item-footer">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                </li>
+                <li class="footer-social-media-item">
+                        <svg width="20px" heigth="20px" class="icon-item-footer">
+                        <use href="./images/sprite.svg#icon-facebook"></use> 
+                       </svg>
+                </li>
+                <li class="footer-social-media-item">
+                        <svg width="20px" heigth="20px"class="icon-item-footer">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                </li>
+            </ul>
+        </div>
         </div>
     </footer>
 
