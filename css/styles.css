@@ -330,6 +330,7 @@ padding-bottom: 94px;
 }
 .team-card-text {
     padding:30px;
+    background-color: var(--primary-white-color);
 }
 
 .social-media-list{
@@ -343,15 +344,12 @@ padding-bottom: 94px;
 .team-card-social-media {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .icon-social-media {
     width:100%;
     height: 100%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,30 +374,35 @@ padding-bottom: 94px;
     gap:30px;
     align-items: center;
     justify-content: center;
-    
 }
 
-.client-logo-link {
-    display: block;
+.client-item {
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+}
+ 
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-color: #AFB1B8;
     border-radius: 4px;
-    fill:#AFB1B8;
 }
-
-.client-logo-item {
-    width: 106px;
-    height: 60px;
-    background-size:contain;
-    color:currentColor;
-}
-
-.client-logo-link:hover,
-.client-logo-link:focus {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--accent-color);
-    fill:var(--accent-color);
+}
+
+.client-logo {
+    fill: #AFB1B8;
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+    fill: var(--accent-color);
 }
 
 /* Portfolio*/
@@ -506,7 +509,6 @@ footer {
 
 .action-phrase{
     color:var(--primary-white-color);
-    margin-top: 12px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -518,6 +520,7 @@ footer {
 .footer-container{
     display:flex;
     gap:70px;
+    align-items: baseline;
 }
 
 .footer-social-media{
@@ -528,11 +531,17 @@ footer {
 .footer-social-media-item{
     width: 44px;
     height: 44px;
+}
+
+.footer-media-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     display:flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: 
+    rgba(255, 255, 255, 0.1);
 }
 
 .icon-item-footer {
@@ -543,4 +552,5 @@ footer {
 .footer-social-media-item:hover,
 .footer-social-media-item:focus {
     background: #2196F3;
+    border-radius: 50%;
 }
